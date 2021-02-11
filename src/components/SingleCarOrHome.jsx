@@ -18,6 +18,7 @@ function SingleCarOrHome() {
             bgAttachment={datas.bgAttachment}
             bgPosition={datas.bgPosition}
             bgSize={datas.bgSize}
+            display={datas.display}
           />
         )
       })}

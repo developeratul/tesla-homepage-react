@@ -134,16 +134,19 @@ nav #NavContentWrapper #Bars .line {
 
 #SingleHomeOrCar {
   height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 #SingleHomeOrCar #ContentWrapper {
-  height: 90vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -155,10 +158,6 @@ nav #NavContentWrapper #Bars .line {
 
 #SingleHomeOrCar #ContentWrapper #Desc {
   text-align: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20%;
-  left: 0;
 }
 
 #SingleHomeOrCar #ContentWrapper #Desc h2 {
@@ -182,7 +181,6 @@ nav #NavContentWrapper #Bars .line {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 35% 0% 0% 0%;
 }
 
 #SingleHomeOrCar #ContentWrapper #Buttons button {
@@ -194,6 +192,7 @@ nav #NavContentWrapper #Bars .line {
   outline: none;
   border: none;
   color: white;
+  cursor: pointer;
   font-family: "Rubik", sans-serif;
 }
 

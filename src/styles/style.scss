@@ -99,17 +99,16 @@ nav {
 
 #SingleHomeOrCar {
   height: 100vh;
+  display: grid;
+  place-items: center;
   #ContentWrapper {
-    height: 90vh;
+    height: 70vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     #Desc {
       text-align: center;
-      position: sticky;
-      top: 20%;
-      left: 0;
       h2 {
         font-size: 3rem;
         color: #393c41;
@@ -125,7 +124,6 @@ nav {
     #Buttons {
       display: flex;
       align-items: center;
-      margin: 35% 0% 0% 0%;
       button {
         background: #3c3d42;
         padding: 10px 60px;
@@ -135,6 +133,7 @@ nav {
         outline: none;
         border: none;
         color: white;
+        cursor: pointer;
         font-family: $mainFont;
         &:nth-child(2) {
           background: #e2dedd;

@@ -14,15 +14,25 @@ function Single(prop) {
       >
         <div id="ContentWrapper">
           <div id="Desc">
-            <h2>{prop.title}</h2>
-            <p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">
+              {prop.title}
+            </h2>
+            <p data-aos="fade-in">
               {prop.desc}
               <span>{prop.descLink}</span>
             </p>
           </div>
           <div id="Buttons">
-            <button>{prop.fButton}</button>
-            <button>{prop.sButton}</button>
+            <button data-aos="fade-right" data-aos-duration="900">
+              {prop.fButton}
+            </button>
+            <button
+              style={{ display: `${prop.display}` }}
+              data-aos="fade-left"
+              data-aos-duration="900"
+            >
+              {prop.sButton}
+            </button>
           </div>
         </div>
       </section>

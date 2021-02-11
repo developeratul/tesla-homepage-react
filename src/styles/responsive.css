@@ -8,5 +8,17 @@
   #Others li:nth-child(1), #Others li:nth-child(2) {
     display: none !important;
   }
+  #Buttons button {
+    text-align: center !important;
+    padding: 8px 30px !important;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  #Buttons button {
+    text-align: center !important;
+    font-size: 0.9rem !important;
+    padding: 8px 10px !important;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */
