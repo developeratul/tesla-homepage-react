@@ -1,2 +1,16 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+  * {
+    cursor: default !important;
+  }
+  #Models {
+    display: none !important;
+  }
+  #Others {
+    li {
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: none !important;
+      }
+    }
+  }
 }

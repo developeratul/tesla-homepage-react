@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media screen and (max-width: 1200px) {
+  * {
+    cursor: default !important;
+  }
+  #Models {
+    display: none !important;
+  }
+  #Others li:nth-child(1), #Others li:nth-child(2) {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
