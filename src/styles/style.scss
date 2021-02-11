@@ -11,6 +11,7 @@
 body {
   overflow-x: hidden;
 }
+$mainFont: 'Rubik', sans-serif;
 
 nav {
   padding: 5px 0px;
@@ -94,4 +95,52 @@ nav {
 }
 .NavOpen {
   transform: translateX(0);
+}
+
+#SingleHomeOrCar {
+  height: 100vh;
+  #ContentWrapper {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    #Desc {
+      text-align: center;
+      position: sticky;
+      top: 20%;
+      left: 0;
+      h2 {
+        font-size: 3rem;
+        color: #393c41;
+      }
+      p {
+        color: #6d7074;
+        padding: 5px 0px 0px 0px;
+        span {
+          border-bottom: 1px solid grey;
+        }
+      }
+    }
+    #Buttons {
+      display: flex;
+      align-items: center;
+      margin: 35% 0% 0% 0%;
+      button {
+        background: #3c3d42;
+        padding: 10px 60px;
+        border-radius: 20px;
+        margin: 0px 10px;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        color: white;
+        font-family: $mainFont;
+        &:nth-child(2) {
+          background: #e2dedd;
+          color: #3c3d42;
+        }
+      }
+    }
+  }
 }
